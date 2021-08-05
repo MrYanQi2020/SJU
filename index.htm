@@ -13,7 +13,7 @@
 <body>
 	<!-- 最外部框架-Start -->
 	<div class="container-fluid px-0 outline">
-		<div class="mycontainer">
+		<div class="container">
 			<!-- 顶部导航 -->
 			<nav class="navbar navbar-expand-md navTop">
 				<div class="row align-items-center  w-100">
@@ -23,7 +23,7 @@
 					</a>
 
 					<nav class="col-auto  d-flex navTop__nav  px-0 ml-72">
-						<a href="#" class="nav-item  mr-24 ml-lg-72 active d-none d-md-block">特色办学</a>
+						<a href="#" class="nav-item  mr-24 active d-none d-md-block">特色办学</a>
 						<a href="#" class="nav-item  mr-24 d-none d-xl-block">招生简章</a>
 						<a href="#" class="nav-item  mr-24 d-none d-md-block">1+x证书</a>
 						<a href="#" class="nav-item  mr-24 d-none d-xl-block ">人工智能证书</a>
@@ -49,17 +49,18 @@
 			</nav>
 		</div>
 		<!-- 轮播-Start -->
-		<div class="container-fluid px-0 h_645 container__fluid carousel__inner position-relative">
-			<!-- <div class="row "> -->
-				<!-- <div class="col px-0"> -->
-					<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-						<div class="carousel-inner">
-							<div class=" carousel-item active h_645 hidden">
+		<div class="container-fluid px-0 h_645 hidden position-relative">
+					<!-- 轮播框架 -->
+					<div id="carouselExampleSlidesOnly" class="carousel slide " data-ride="carousel-stop">
+						<!-- 轮播项 -->
+						<div class="carousel-inner carousel__inner">
+							<div class="carousel-item active  ">
 								<!-- 轮播图 -->
 								<img src="./images/carousel_img_01.jpg" class="img-fluid w-100 d-block">
 								<!-- 轮播附加信息 -->
-								<div class="mycontainer carousel-caption carousel__caption d-none d-md-block">
-									<div class="carousel__text d-none d-lg-flex">
+								<section class="h-100 carousel-caption carousel__caption ">
+									<div class="section__container h-100 position-relative">
+										<div class="carousel__text d-none d-lg-flex">
 										<p class="  carousel__text_one">西南交通大学同等学历</p>
 										<p class="  carousel__text_two">申请硕士学位</p>
 										<p class="  carousel__text_three">栽植完成硕士研究生学位，满足你对未来的渴望</p>
@@ -71,165 +72,181 @@
 										<div class="carousel__bg_opacity">
 										</div>
 									</div>
-									<div class="row carousel__msg d-flex justify-content-between ">
-										<button class="col-lg-auto carousel__btn">
+									<div class="row carousel__msg d-flex justify-content-between mt-0 mt-lg-5  ">
+										<button class="col-lg-auto carousel__btn d-none d-md-block">
 											<span>现在报名入学</span>
 											<div class="carousel__icon-right"></div>
 										</button>
 
-										<div
-											class="col-lg-auto  carousel__msg_other mt-5 mt-lg-0 d-flex flex-column justify-content-between">
+										<div class="col-lg-auto  carousel__msg_other mt-5 mt-lg-0 d-none d-md-flex flex-column justify-content-between ">
 											<div class="carousel__msg_icon d-flex">
-												<img src="./images/icon_carousel_zhaosheng.png">
+												<img class="img-fluid  d-block" src="./images/icon_carousel_zhaosheng.png">
 												<span>招生专业: 交通运输类、物流类、计算机类、软件类</span>
 											</div>
 											<div class="carousel__msg_icon d-flex">
-												<img src="./images/icon_carousel_address.png">
+												<img class="img-fluid  d-block"  src="./images/icon_carousel_address.png">
 												<span>学习地点: 成都|广汉|宜宾|线上</span>
 											</div>
 											<div class="carousel__msg_icon d-flex">
-												<img src="./images/icon_carousel_cultivate.png">
+												<img class="img-fluid  d-block" src="./images/icon_carousel_cultivate.png">
 												<span>培养类别: 已获得学士学位的在职人员</span>
 											</div>
 										</div>
 									</div>
-								</div>
+
+									</div>
+								</section>
 							</div>
-							<div class=" carousel-item h_645 hidden">
+							<div class=" carousel-item ">
 								<img src=" ./images/carousel_img_02.jpg" class="img-fluid w-100 d-block ">
 							</div>
-							<div class=" carousel-item h_645 hidden">
+							<div class=" carousel-item ">
 								<img src="./images/carousel_img_03.jpg" class="img-fluid w-100 d-block ">
 							</div>
 						</div>
 					</div>
-				<!-- </div> -->
-			<!-- </div> -->
-			<!-- column-one-教学特点1 -->
-			<div class="main__column">
-					<ul class="row px-5  py-5 h-100">
-						<!-- left -->
-						<li class="col-lg-6 px-5 mb-5 mb-lg-0 d-flex flex-column justify-content-between">
-							<div class="d-flex align-items-center">
-								<img class="d-none d-md-inline" src="./images/column_img_01.png " alt="">
-								<h5 class="ml-4">独具特色的培养模式</h5>
-							</div>
-							<div>
-								<p class="my-4">采用完全分封紫霞的项目制、学渎职培养模式，以现场案例教学为主，学生在专任教师和企业到施工欧诺个知道下完成须，极大提高动手操作能力</p>
-								<p class="my-4">
-									工学结合，学生如小猴几参加相关岗位技能培训，100%为学生提供轻功助学岗位（自愿参加，平均工资不低于1500、月，真正实现如雪上岗）
-								</p>
-							</div>
-							<button>
-								点击了解详情
-							</button>
-						</li>
-						<!-- right -->
-						<li class="col-lg-6 px-5 mt-5 mt-lg-0  d-flex flex-column justify-content-between">
-							<div class="d-flex align-items-center">
-								<img class="d-none d-md-inline" src="./images/column_img_02.png" alt="">
-								<h5 class="ml-4">更多层次的成长通道</h5>
-							</div>
-							<div>
-								<p class="my-4">
-									学生可参加专升本考试升入四川师范大学等，或通过自考方式取得西南交通大学，四川是发大学等高校本科文聘
-								</p>
-								<p class="my-4">
-									学员与西南交通大学深度合作开展研究生课程班，满足条件的盛情只可以通过修读研究生课程，参加同等学力生情考试，完成硕士学位论文，获得硕士学位
-								</p>
-							</div>
-							<button>
-								点击了解详情
-							</button>
-						</li>
-					</ul>
-			</div>
+
 		</div>
 		<!-- 轮播-End -->
 
 		<!-- 主要内容区域-Start -->
-		<main  class="container main__container">
-			<div class="main px-3 px-md-0">
+		<!-- <main  class="container main__container"> -->
+			<div class="main " >
+				<!-- column-one-教学特点1 -->
+				<div class="main__column  py-64 py-64 bgf7f8f9 position-relative px-3 px-md-0 ">
+					<section class="container box-shadow1 radius10 position-relative bgfff mt-160-negative ">
 
-				<!-- column-two-教学特点2-->
-				<div class="main__card main__son">
-					<ul class="row px-5 py-5 h-100">
-						<li
-							class="col-lg-4 px-5 py-3 mb-5 mb-lg-0 d-flex flex-column justify-content-between align-items-center">
-
-							<div class="d-none d-md-block main__card_imgcontainer">
-								<img class="img-fluid" src="./images/column_img_01.png" alt="">
-							</div>
-							<h5 class="main__card_title">项目制管理</h5>
-							<p class="my-4 min-h-252">
-								学生入校后将根据不同学习特点和兴趣，组成3-5人项目小组，通过系列模拟或真实的项目让学生了解项目实现的全过程，采用进阶制、积分制评价方式，改变过去传统的单一的成绩评价机制，其目的是学生真正的掌握职业技能。
-							</p>
-						</li>
-
-						<li
-							class="col-lg-4 px-5 py-3 mb-5 mb-lg-0 d-flex flex-column justify-content-between align-items-center">
-
-							<div class="d-none d-md-block main__card_imgcontainer">
-								<img class=" img-fluid" src="./images/icon_content_02.png" alt="">
-							</div>
-							<h5 class="main__card_title c21bf9c">学徒制培养</h5>
-							<p class="my-4 min-h-252">
-								学生将在专职教师和企业导师的共同指导下完成学业，企业导师100%来自阿里巴巴、腾讯华为、百度等知名企业技术专家，理论与实践深度融合，在企业导师指导下完成项目训练，真实的了解最新岗位需求，更好的规划未来职业方向。
-							</p>
-						</li>
-						<li
-							class="col-lg-4 px-5 py-3 mb-5 mb-lg-0 d-flex flex-column justify-content-between align-items-center">
-
-							<div class="d-none d-md-block main__card_imgcontainer">
-								<img class=" img-fluid" src="./images/icon_content_02.png" alt="">
-							</div>
-							<h5 class="main__card_title ">案例式教学</h5>
-							<p class="my-4 min-h-252">
-								我们一直在探索更适合的教学方式，所有的学习都是基于案例的，这种更加有趣、生动的学习方式将有别于传统教学，所有的案例都来自于经典和企业实践，通过十余年的总结凝练，帮助你更轻松的掌握知识。
-							</p>
-						</li>
-					</ul>
+											<ul class="row px-4  py-5 h-100 justify-content-center">
+												<li class="d-md-none px-3 mb-4  ">
+													<button class="col-lg-auto carousel__btn d-block main__column_otherBtn">
+														<span>报名入学</span>
+														<div class="carousel__icon-right"></div>
+													</button>
+												</li>	
+												<!-- left -->
+												<li class="col-lg-6 px-md-5 mb-5  mb-lg-0 d-flex flex-column justify-content-between align-items-center align-items-lg-stretch">
+													<div class="d-flex align-items-center">
+														<img class="d-none d-md-inline img-fluid  d-block" src="./images/column_img_01.png " alt="">
+														<h5 class="ml-4">独具特色的培养模式</h5>
+													</div>
+													<div>
+														<p class="my-4">
+															采用完全分封紫霞的项目制、学渎职培养模式，以现场案例教学为主，学生在专任教师和企业到施工欧诺个知道下完成须，极大提高动手操作能力
+														</p>
+														<p class="my-4">
+															工学结合，学生如小猴几参加相关岗位技能培训，100%为学生提供轻功助学岗位（自愿参加，平均工资不低于1500、月，真正实现如雪上岗）
+														</p>
+													</div>
+													<button>
+														点击了解详情
+													</button>
+												</li>
+												<!-- right -->
+												<li class="col-lg-6 px-md-5 d-flex flex-column justify-content-between align-items-center align-items-lg-stretch">
+													<div class="d-flex align-items-center">
+														<img class="d-none d-md-inline img-fluid  d-block" src="./images/column_img_02.png" alt="">
+														<h5 class="ml-4">更多层次的成长通道</h5>
+													</div>
+													<div>
+														<p class="my-4">
+															学生可参加专升本考试升入四川师范大学等，或通过自考方式取得西南交通大学，四川是发师和企大学过修读研究等高校工欧诺个本科文聘
+														</p>
+														<p class="my-4">
+															学员与西南交通大学深度合作开展研究生课程班，满足条件的盛情只可以通过修读研究生课程，参加同等学力生情考试，完成硕士学位论文，获得硕士学位
+														</p>
+													</div>
+													<button>
+														点击了解详情
+													</button>
+												</li>
+											</ul>
+					</section>
 				</div>
-				<!-- column-three-办学条件 -->
-				<div
-					class="main__son main__operatingConditions py-5 my-5  d-flex flex-column align-items-center justify-content-between">
-					<h5 class="main__operatingConditions_title mb-4">优越的办学条件助你扬帆远航</h5>
-					<p class="px-4">
-						学院由德阳科贸职业学院（原四川师范大学广汉校区）与北京寓乐世界教育科技有限公司、成都交大大数据科技有限公司（西南交通大学交通大数据国家工程实验室）共同建设的创新型产业学院，其管理团队和师资全部来自于一流高校和知名企业，重点培养能从事人工智能、大数据、云计算等相关领域工作的高级技能型人才。学院位于四川省广汉市，毗邻成都，从成都东站出发高铁18分钟即可到达，汽车约50分钟，地理位置优越，校园环境优美，办学设施优秀。
-					</p>
-					<div class="main__operatingConditions_imgs row mt-4">
-						<div
-							class="main__operatingConditions_content one text-center position-relative col-md-6 col-lg-4">
-							<img src="./images/pho_content_conditions_01.jpg" width="375" height="263"
-								class=" d-block w-100 ">
-						</div>
-						<div
-							class="main__operatingConditions_content two text-center position-relative col-md-6 col-lg-4 mt-4 mt-md-0">
-							<img src="./images/pho_content_conditions_02.jpg" width="375" height="263"
-								class="position-relative d-block w-100 ">
-						</div>
-						<div
-							class="main__operatingConditions_content three text-center position-relative col-md-6 col-lg-4 mt-4 mt-lg-0">
-							<img src="./images/pho_content_conditions_03.jpg" width="375" height="263"
-								class="position-relative d-block w-100 ">
-						</div>
+				<div class="py-64 bgfff px-3 px-md-0">
+					<!-- column-two-教学特点2-->
+					<div class="main__son main__card mb-3">
+						<section class="container  box-shadow1 radius10">
+							<ul class="row px-4 py-4 h-100">
+							<li
+								class="col-lg-4 px-md-5 py-3  d-flex flex-column align-items-center">
+
+								<div class="d-none d-md-flex justify-content-center align-items-center  main__card_imgcontainer mb-32">
+									<img class="img-fluid  d-block" src="./images/icon_content_01.png" alt="">
+								</div>
+								<h5 class="main__card_title">项目制管理</h5>
+								<p class="my-4 ">
+									学生入校后将根据不同学习特点和兴趣，组成3-5人项目小组，通过系列模拟或真实的项目让学生了解项目实现的全过程，采用进阶制、积分制评价方式，改变过去传统的单一的成绩评价机制，其目的是学生真正的掌握职业技能。
+								</p>
+							</li>
+
+							<li
+								class="col-lg-4 px-md-5 py-3  d-flex flex-column  align-items-center">
+
+								<div class="d-none d-md-flex justify-content-center align-items-center main__card_imgcontainer active mb-32">
+									<img class=" img-fluid  d-block" src="./images/icon_content_02.png" alt=""> 
+								</div>
+								<h5 class="main__card_title c21bf9c ">学徒制培养</h5>
+								<p class="my-4 ">
+									学生将在专职教师和企业导师的共同指导下完成学业，企业导师100%来自阿里巴巴、腾讯华为、百度等知名企业技术专家，理论与实践深度融合，在企业导师指导下完成项目训练，真实的了解最新岗位需求，更好的规划未来职业方向。
+								</p>
+							</li>
+							<li
+								class="col-lg-4 px-md-5 py-3  d-flex flex-column align-items-center">
+
+								<div class="d-none d-md-flex justify-content-center align-items-center main__card_imgcontainer mb-32">
+									<img class=" img-fluid  d-block" src="./images/icon_content_03.png" alt="">
+								</div>
+								<h5 class="main__card_title ">案例式教学</h5>
+								<p class="my-4 ">
+									我们一直在探索更适合的教学方式，所有的学习都是基于案例的，这种更加有趣、生动的学习方式将有别于传统教学，所有的案例都来自于经典和企业实践，通过十余年的总结凝练，帮助你更轻松的掌握知识。
+								</p>
+							</li>
+						</ul>
+						</section>
+					</div>
+					<!-- column-three-办学条件 -->
+					<div class="main__son main__operatingConditions ">
+						<section class="container position-relative pt-5  d-flex flex-column align-items-center justify-content-between">
+							<h5 class="main__operatingConditions_title mb-4">优越的办学条件助你扬帆远航</h5>
+						<p class="px-md-4">
+							学院由德阳科贸职业学院（原四川师范大学广汉校区）与北京寓乐世界教育科技有限公司、成都交大大数据科技有限公司（西南交通大学交通大数据国家工程实验室）共同建设的创新型产业学院，其管理团队和师资全部来自于一流高校和知名企业，重点培养能从事人工智能、大数据、云计算等相关领域工作的高级技能型人才。学院位于四川省广汉市，毗邻成都，从成都东站出发高铁18分钟即可到达，汽车约50分钟，地理位置优越，校园环境优美，办学设施优秀。
+						</p>
+						<div class="main__operatingConditions_imgs row mt-4">
+							<div
+								class="main__operatingConditions_content one text-center position-relative col-md-6 col-lg-4">
+								<img src="./images/pho_content_conditions_01.jpg" width="375" height="263"
+									class=" d-block  img-fluid">
+							</div>
+							<div
+								class="main__operatingConditions_content two text-center position-relative col-md-6 col-lg-4 mt-2 mt-md-0">
+								<img src="./images/pho_content_conditions_02.jpg" width="375" height="263"
+									class="d-block  img-fluid">
+							</div>
+							<div
+								class="main__operatingConditions_content three text-center position-relative col-md-6 col-lg-4 mt-2 mt-lg-0">
+								<img src="./images/pho_content_conditions_03.jpg" width="375" height="263"
+									class=" d-block  img-fluid">
+							</div>
+						</div>        
+						</section>
 					</div>
 				</div>
 				<!-- column-four-证书1 -->
-				<div class="main__son main__certificate d-flex py-5 my-5 flex-column align-items-center justify-content-between">
-					<h5 class="mb-5">1+X证书—为你解锁更多职业技能</h5>
+				<div class="main__son main__certificate bgf7f8f9 py-64 px-3 px-md-0">
+					<section class="container position-relative d-flex  flex-column align-items-center justify-content-between bgf7f8f9">
+						<h5 class="mb-5">1+X证书—为你解锁更多职业技能</h5>
 					<div class="main__certificate_content row w-100 justify-content-between">
 						<!-- 左侧信息 -->
-						<div class="certificate__content bg col-lg-6 px-0">
+						<div class="certificate__content bg col-lg-6 px-0 d-flex flex-column align-items-center align-items-md-stretch">
 							<h6>工信部专项技术证书-数据标注师</h6>
 							<p>
 								工信部“数据标注”专项技术认证证书是学院首个获得授权开展的1+X证书项目，此证书由工信部发起，针对于人工智能及大数据领域新兴岗位设立的专项技术认证。适用于全行业、职业人群，若需从事人工智能数据处理相关岗位需考取此证书，获得证书能够证明证书持有者在数据采集、数据标注、数据审核等多方面技能的掌握程度。
 							</p>
 							<div class="certificate__tips bg">
 								<ul>
-									<li>适用人群：<span class="certificate__text_style1">任何学校任何专业均可报名参加</span></li>
-									<li>培训费用：<span class="c028fff">2000元（面授约4周）</span></li>
-									<li>考试费用：<span class="c028fff">320元</span></li>
+									<li class="certificate__tips_bg1">适用人群：<span class="certificate__text_style1">任何学校任何专业均可报名参加</span></li>
+									<li class="certificate__tips_bg2">培训费用：<span class="c028fff">2000元（面授约4周）</span></li>
+									<li class="certificate__tips_bg3">考试费用：<span class="c028fff">320元</span></li>
 								</ul>
 							</div>
 							<button class="carousel__btn certificate__btn mt-3">
@@ -239,20 +256,23 @@
 						</div>
 						<!-- 右侧图片 -->
 						<div class="certificate__img col-lg-5 align-self-center px-0 mt-4 mt-lg-0">
-							<img src="./images/pho_content_1+x.jpg" class="d-block w-100 img-fluid">
+							<img src="./images/pho_content_1+x.jpg" class="d-block 
+							 img-fluid">
 						</div>
 					</div>
+					</section>
 				</div>
 				<!-- column-five-证书2    -->
-				<div class="main__son main__certificate py-5 my-5 d-flex flex-column align-items-center justify-content-between">
-					<h5 class="mb-5">微软人工智能证书—迈向人工智能的第一步</h5>
+				<div class="main__son main__certificate bgfff py-64 px-3 px-md-0">
+					<section class="container position-relative  d-flex flex-column align-items-center justify-content-between">
+						<h5 class="mb-5">微软人工智能证书—迈向人工智能的第一步</h5>
 					<div class="certificate__msg row  w-100 justify-content-between">
 						<!-- 左侧图片 -->
 						<div class="certificate__img  col-lg-5 px-0 align-self-start mb-4 mb-lg-0">
-							<img src="./images/pho_content_microsoftCertified.jpg" class="d-block w-100 img-fluid">
+							<img src="./images/pho_content_microsoftCertified.jpg" class="d-block  img-fluid">
 						</div>
 						<!-- 右侧信息 -->
-						<div class="certificate__content col-lg-6 px-0">
+						<div class="certificate__content col-lg-6 px-0 d-flex flex-column align-items-center align-items-md-stretch">
 							<h6>微软人工智能认证书</h6>
 							<small>Azure AI Fundamentals</small>
 							<p>
@@ -273,77 +293,80 @@
 							</button>
 						</div>
 					</div>
+					</section>
 				</div>
 				<!-- column-six-合作企业 -->
-				<div class="main__son main__friendlink my-5 py-5 d-flex flex-column align-items-center justify-content-between">
-					<h5 class="mb-5">底气来自于合作企业赋能学院人才培养</h5>
-					<p class="px-5 mx-5">
+				<div class="main__son main__friendlink bgf7f8f9 py-64 px-3 px-md-0">
+					<section class="container position-relative d-flex flex-column align-items-center justify-content-between">
+									<h5>底气来自于合作企业赋能学院人才培养</h5>
+					<p class="px-md-5 mx-md-5 py-4">
 						依托北京寓乐世界教育科技有限公司和成都交大大数据科技有限公司（西南交通大学交通大数据国家工程实验室）的资源优势和行业背景，国内知名IT企业参与合作，共同为学院人才培养赋能，更具创新和活力的人才培养模式，将为学院毕业生提供更加多元的就业机会。
 					</p>
 					<ul class="main__friendlink_list row w-100 ">
 						<li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#"
 								class="h-100 w-100 d-inline-flex justify-content-center align-items-center"><img
-									width="140" height="140" src="./images/pic_friendLink_jackInTheBox.jpg"></a></li>
+									width="140" height="140" class="w-100 d-block img-fluid" src="./images/pic_friendLink_jackInTheBox.jpg"></a></li>
 						<li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#"
 								class="h-100 w-100 d-inline-flex justify-content-center align-items-center"><img
-									width="140" height="140" src="./images/pic_friendLink_ctrip.jpg"></a></li>
+									width="140" height="140" class="w-100 d-block img-fluid" src="./images/pic_friendLink_ctrip.jpg"></a></li>
 						<li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#"
 								class="h-100 w-100 d-inline-flex justify-content-center align-items-center"><img
-									width="140" height="140" src="./images/pic_friendLink_jd.jpg"></a></li>
+									width="140" height="140" class="w-100 d-block img-fluid" src="./images/pic_friendLink_jd.jpg"></a></li>
 						<li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#"
 								class="h-100 w-100 d-inline-flex justify-content-center align-items-center"><img
-									width="140" height="140" src="./images/pic_friendLink_tsinghua.jpg"></a></li>
+									width="140" height="140" class="w-100 d-block img-fluid" src="./images/pic_friendLink_tsinghua.jpg"></a></li>
 						<li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#"
 								class="h-100 w-100 d-inline-flex justify-content-center align-items-center"><img
-									width="140" height="140" src="./images/pic_friendLink_pku.jpg"></a></li>
+									width="140" height="140" class="w-100 d-block img-fluid" src="./images/pic_friendLink_pku.jpg"></a></li>
 						<li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#"
 								class="h-100 w-100 d-inline-flex justify-content-center align-items-center"><img
-									width="140" height="140" src="./images/pic_friendLink_xdf.jpg"></a></li>
+									width="140" height="140" class="w-100 d-block img-fluid" src="./images/pic_friendLink_xdf.jpg"></a></li>
 						<li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#"
 								class="h-100 w-100 d-inline-flex justify-content-center align-items-center"><img
-									width="140" height="140" src="./images/pic_friendLink_suning.jpg"></a></li>
+									width="140" height="140" class="w-100 d-block img-fluid" src="./images/pic_friendLink_suning.jpg"></a></li>
 						<li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#"
 								class="h-100 w-100 d-inline-flex justify-content-center align-items-center"><img
-									width="140" height="140" src="./images/pic_friendLink_snmsumg.jpg"></a></li>
+									width="140" height="140" class="w-100 d-block img-fluid" src="./images/pic_friendLink_snmsumg.jpg"></a></li>
 						<li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#"
 								class="h-100 w-100 d-inline-flex justify-content-center align-items-center"><img
-									width="140" height="140" src="./images/pic_friendLink_pingan.jpg"></a></li>
+									width="140" height="140" class="w-100 d-block img-fluid" src="./images/pic_friendLink_pingan.jpg"></a></li>
 						<li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#"
 								class="h-100 w-100 d-inline-flex justify-content-center align-items-center"><img
-									width="140" height="140" src="./images/pic_friendLink_ele.jpg"></a></li>
+									width="140" height="140" class="w-100 d-block img-fluid" src="./images/pic_friendLink_ele.jpg"></a></li>
 						<li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#"
 								class="h-100 w-100 d-inline-flex justify-content-center align-items-center"><img
-									width="140" height="140" src="./images/pic_friendLink_alipay.jpg"></a></li>
+									width="140" height="140" class="w-100 d-block img-fluid" src="./images/pic_friendLink_alipay.jpg"></a></li>
 						<li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#"
 								class="h-100 w-100 d-inline-flex justify-content-center align-items-center"><img
-									width="140" height="140" src="./images/pic_friendLink_cnecc.jpg"></a></li>
+									width="140" height="140" class="w-100 d-block img-fluid" src="./images/pic_friendLink_cnecc.jpg"></a></li>
 						<li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#"
 								class="h-100 w-100 d-inline-flex justify-content-center align-items-center"><img
-									width="140" height="140" src="./images/pic_friendLink_huawei.jpg"></a></li>
+									width="140" height="140" class="w-100 d-block img-fluid" src="./images/pic_friendLink_huawei.jpg"></a></li>
 						<li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#"
 								class="h-100 w-100 d-inline-flex justify-content-center align-items-center"><img
-									width="140" height="140" src="./images/pic_friendLink_jdjd.jpg"></a></li>
+									width="140" height="140" class="w-100 d-block img-fluid" src="./images/pic_friendLink_jdjd.jpg"></a></li>
 						<li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#"
 								class="h-100 w-100 d-inline-flex justify-content-center align-items-center"><img
-									width="140" height="140" src="./images/pic_friendLink_chinaunicom.jpg"></a></li>
+									width="140" height="140" class="w-100 d-block img-fluid" src="./images/pic_friendLink_chinaunicom.jpg"></a></li>
 									<li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#"
 								class="h-100 w-100 d-inline-flex justify-content-center align-items-center"><img
-									width="140" height="140" src="./images/pic_friendLink_snmsumg.jpg"></a></li>
+									width="140" height="140" class="w-100 d-block img-fluid" src="./images/pic_friendLink_snmsumg.jpg"></a></li>
 						<li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#"
 								class="h-100 w-100 d-inline-flex justify-content-center align-items-center"><img
-									width="140" height="140" src="./images/pic_friendLink_pingan.jpg"></a></li>
+									width="140" height="140" class="w-100 d-block img-fluid" src="./images/pic_friendLink_pingan.jpg"></a></li>
 						<li class="col-6 col-md-4 col-lg-3 col-xl-2"><a href="#"
 								class="h-100 w-100 d-inline-flex justify-content-center align-items-center"><img
-									width="140" height="140" src="./images/pic_friendLink_ele.jpg"></a></li>
+									width="140" height="140" class="w-100 d-block img-fluid" src="./images/pic_friendLink_ele.jpg"></a></li>
 					</ul>
+					</section>
 				</div>
 			</div>
-		</main>
+		<!-- </main> -->
 		<!-- 主要内容区域-End -->
 
 		<!-- 页脚-Start -->
-		<footer class="position-relative d-flex justify-content-center mt-5">
-			<div class="container h-100 position-absolute footer__lists d-flex align-items-center ">	
+		<footer class="position-relative d-flex justify-content-center">
+			<section class="container h-100 position-absolute footer__lists d-flex align-items-center ">	
 				<ul class="row d-none d-md-flex">
 					<li class="col-6 col-md-3 px-4">
 						<span class="footer__lists_title">关于我们</span>
@@ -386,7 +409,7 @@
 						</ul>
 					</li>
 				</ul>
-			</div>
+			</section>
 			<div class="footer__bg  h-100 d-flex align-items-end" >
 					<img width="300" height="379" src="./images/pic_footer_bronze_01.png" alt="" class="img-fluid">
 					<img width="332" height="294" src="./images/pic_footer_bronze_02.png" alt="" class="img-fluid">
@@ -421,20 +444,20 @@
 	<!-- All-End -->
 
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
 	<script>
 		// 菜单操作-Start
 		function menushow() {
 			if ($('.menu__hide').length) {
 				$('.menu').removeClass('menu__hide').addClass('menu__show');
-				$('.mycontainer').css("transform", "translateX(-300px)");
+				$('.outline').css("transform", "translateX(-80vw)");
 			} else {
 				$('.menu').removeClass('menu__show').addClass('menu__hide');
-				$('.mycontainer').css("transform", "translateX(0)");
+				$('.outline').css("transform", "translateX(0)");
 			}
 		}
 
-		$('.mycontainer').css("transition", ".3s .1s");
+		$('.outline').css("transition", ".3s .1s");
 		$('.nav__button_menu').on('click', function () {
 			$(this).css("outline", "none");
 			menushow();
@@ -443,7 +466,7 @@
 			const viewWidth = document.documentElement.clientWidth;
 			if (viewWidth > 750 && !$('.menu__hide').length) {
 				$('.menu').removeClass('menu__show').addClass('menu__hide');
-				$('.mycontainer').css("transform", "translateX(0)");
+				$('.outline').css("transform", "translateX(0)");
 			}
 		});
 		// 菜单操作-End
@@ -461,16 +484,16 @@
 		// 计算类名为.main的padding-top高度-End
 
 		// 计算main__son的宽度随main__column的宽度变化—Start
-		$(window).resize(function () {
-			const width = $('.main__son')[0].clientWidth;
-			console.log(width);
-			$('.main__column').css("width", width + "px");
+		// $(window).resize(function () {
+		// 	const width = $('.main__son')[0].clientWidth;
+		// 	console.log(width);
+		// 	$('.main__column').css("width", width + "px");
 
-		})
-		$(document).ready(function () {
-			const width = $('.main__son')[0].clientWidth;
-			$('.main__column').css("width", width + "px");
-		})
+		// })
+		// $(document).ready(function () {
+		// 	const width = $('.main__son')[0].clientWidth;
+		// 	$('.main__column').css("width", width + "px");
+		// })
 		// 计算main__son的宽度随main__column的宽度变化—End
 
 	</script>

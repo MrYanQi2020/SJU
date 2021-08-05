@@ -1,10 +1,9 @@
 html,body{
-	border:2px solid red;
 	overflow-x: hidden;
 }
 .outline{
 	width:100vw;
-
+	height:100vh;
 }
 a{
 	text-decoration: none;
@@ -14,47 +13,7 @@ a:hover{
 	text-decoration: none;
 
 }
-    .mycontainer {
-        margin:0 auto;
-        max-width:550px;
-    }
-@media (max-width: 576px){
-    .mycontainer {
-        margin:0 auto;
-        max-width:550px;
-        
-    }
-}
-
-
-@media (min-width: 768px){
-    .mycontainer {
-        margin:0 auto;
-        max-width:740px;
-
-    }
-}
-@media (min-width: 992px){
-    .mycontainer {
-        margin:0 auto;
-        max-width:945px;
-    }
-    	.main__container{
-	    	margin-top:30px;
-	    }
-}
-    @media (min-width: 1198px){
-	  .mycontainer {
-	        margin:0 auto;
-	        max-width:1200px;
-	    }
-	    .main__container{
-	    	margin-top:0;
-	    }
-
-    }
-
-
+    
 .c13c0a9{
 	color:#13c0a9;
 }
@@ -76,6 +35,15 @@ a:hover{
 }
 .mr-24{
 	margin-right:24px;
+}
+.mt-160-negative{
+	margin-top:-160px;
+}
+.mb-32{
+	margin-bottom:32px;
+}
+.py-64{
+	padding:64px 0;
 }
 .nav__content{
 	width: 669px;
@@ -129,11 +97,6 @@ a:hover{
 	padding:20px 0;
 	box-shadow: 0 0.3px 0.5px  grey;
 }
-@media (max-width: 576px){
-    .navTop{
-		padding:20px 18px;
-    }
-}
 .w-206{
 	    max-width: 245px;
 }
@@ -154,7 +117,7 @@ a:hover{
 }
 
 .menu{
-	width:300px;
+	width:80vw;
 	height:100vh;
 	min-height:500px;
 	border:2px solid;
@@ -210,18 +173,11 @@ a:hover{
 	width:100%;
 	height:643px;
 }
-/*轮播外部container*/
-.container__fluid{
-/*	position:absolute;
-	top:112px;
-	left:0;*/
-}
+
 /*轮播附加信息*/
 .carousel__caption{
-	position: absolute;
-	top:89px;
-	left:15%;
     text-shadow: 1px 1px black;
+    padding-top: 115px;
 }
 .carousel__text{
 	width: 531px;
@@ -255,7 +211,7 @@ a:hover{
 
 }
 
-.carousel__btn{
+.carousel__btn,.main__column button{
 	position: relative;
 	width: 289px;
 	height: 54px;
@@ -271,6 +227,13 @@ a:hover{
 	letter-spacing: 2px;
 
 }
+.main__column_otherBtn.carousel__btn{
+	width:100%;
+	text-indent: 1em;
+}
+.main__column_otherBtn.carousel__btn span {
+	margin-right:2.5em;
+}
 .carousel__icon-right{
 	position: absolute;
 	top:7px;
@@ -283,10 +246,6 @@ a:hover{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 24px;
-}
-.carousel__msg{
-	width: 840px;
-	margin:54px 0 0 0;
 }
 .carousel__msg_other{
 	height:116px;
@@ -305,6 +264,7 @@ a:hover{
 	top:0;
 	left:0;
 }
+
 /*研究课程班气泡*/
 .carousel__msg_tooltip{
 	display:flex;
@@ -340,44 +300,26 @@ a:hover{
 .main__son{
 	margin:0 auto;
 }
-/*main块下的部分     子元素*/
-.main__column,.main__card,.main__operatingConditions,.main__certificate,.main__friendlink{
-	/*max-width: 1200px;*/
-	background-color: #ffffff;
+/*灰色背景*/
+.bgf7f8f9{
+	background-color:#f7f8f9;
+}
+/*白色背景*/
+.bgfff{
+	background-color:#fff;
+}
+.bgred{
+	background-color: red;
+}
+/*圆角10px*/
+.radius10{
 	border-radius: 10px;
+}
+/*盒阴影1*/
+.box-shadow1{
 	box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
-	position:relative;
-
 }
-.main__operatingConditions,.main__certificate,.main__friendlink{
-	border-radius:0;
-	box-shadow: none;
-}
-/*当分辨率超过1200px时类的变化*/
-
-.main__column{
-	width: 70%;
-    z-index: 1000;
-    position: absolute;
-    top: 83%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: white;
-}
-
-
-@media (min-width:992.98px){
-	.main__card{
-			margin-top: 420px;
-
-	}
-}
-
-.main__card{
-	margin-top: 420px;
-
-}
-.main__column button{
+.main__column button,{
 	width: 190px;
 	height: 40px;
 	background-color: #21bf9c;
@@ -402,7 +344,7 @@ a:hover{
 	letter-spacing: 1px;
 	
 }
-/*分割线*/
+/*分割线-Start*/
 .main__column::after{
 	content:"";
 	display: block;
@@ -417,18 +359,27 @@ a:hover{
 	border-radius:50%;
 	opacity:0.5;
 	background-color:rgba(0,0,0,.1);
+	/*父元素relative向上160px,so伪元素跟着变化*/
+	transform: translateY(-80px);
 }
 @media (max-width:992.98px){
 	.main__column::after{
 		display:none;
 	}
 }
+/*分割线-End*/
+
 .main__card_imgcontainer{
-	width:90px;
-	height:90px;
+	width:120px;
+	height:120px;
 	text-align: center;
 	line-height: 122px;
 
+}
+.main__card_imgcontainer.active{
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url("../images/icon_round-bg.png");
 }
 @media (max-width:576px){
 	.min-h-252{
@@ -500,11 +451,20 @@ a:hover{
 	font-weight: bold;
 	margin:17px 0;
 }
-.certificate__tips.bg{
-	background-image: url(../images/icon_content_contacts.png);
+.certificate__tips.bg li{
 	background-repeat: no-repeat;
 	background-size:19px;
 	text-indent: 1.7em;
+	    background-position-y: 5px;
+}
+.certificate__tips_bg1{
+	background-image: url(../images/icon_content_contacts.png);
+}
+.certificate__tips_bg2{
+	background-image: url(../images/icon_content_￥.png);
+}
+.certificate__tips_bg3{
+	background-image: url(../images/icon_content_￥.png);
 }
 /*<!-- column-four-End*/
 
@@ -527,7 +487,7 @@ a:hover{
 }
 /*证书图片样式-End*/
 .c028fff{
-	font-size: 24px;
+	font-size: 1.5em;
 	color: #028fff;
 	font-weight: 400;
 }
@@ -594,3 +554,10 @@ footer{
 	line-height:20px;
 }
 /* 页脚-End */
+
+.position-btm-0{
+	bottom:0;
+}
+.position-left-0{
+	left:0;
+}
