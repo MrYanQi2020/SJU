@@ -1,19 +1,52 @@
+
 html,body{
-	overflow-x: hidden;
+    overflow-x:hidden;
 }
-.outline{
-	width:100vw;
-	height:100vh;
+html{
+    font-size: 62.5% !important;
+}
+@media (min-width: 992px){
+    html{
+        font-size:62.5%;
+    }
+}
+@media (min-width: 768px){
+    html{
+        font-size:59%;
+    }
+}
+@media (min-width: 576px){
+    html{
+        font-size:56%;
+    }
 }
 a{
 	text-decoration: none;
 	color:inherit;
 }
 a:hover{
+    text-decoration:none;
+}
+.outline{
+	width:100vw;
+	height:100vh;
+}
+
+a:hover{
 	text-decoration: none;
 
 }
     
+button{
+	outline:none;
+	border:none;
+}
+
+@media (max-width:991.98px){
+	.carousel__msg{
+		transform: translateY(65px);
+	}
+}
 .c13c0a9{
 	color:#13c0a9;
 }
@@ -25,19 +58,24 @@ a:hover{
 .ml-22{
 	margin-left: 22px;
 }
-@media (min-width:1200px){
-	.ml-lg-72{
-	margin-left: 72px;
 }
-}
-.ml-72{
-	margin-left:72px;
+.ml-46{
+	margin-left:46px;
 }
 .mr-24{
 	margin-right:24px;
 }
+.mb-166{
+	margin-bottom: 166px;
+}
+.mt-40{
+	margin-top:40px;
+}
 .mt-160-negative{
 	margin-top:-160px;
+}
+.mt-500-negative{
+	margin-top: -500px;
 }
 .mb-32{
 	margin-bottom:32px;
@@ -80,9 +118,17 @@ a:hover{
 	margin-left:auto;
 	margin-right:-20px;
 }
-
+.rem1-5{
+	    font-size: 1.5rem;
+}
 .pr-0{
 	padding-right:0;
+}
+.pt-110{
+	padding-top:100px;
+}
+.pt-20{
+	padding-top: 20px;
 }
 .nav__button_menu{
 	border-radius:5px;
@@ -91,8 +137,6 @@ a:hover{
 	background-color: inherit;
 }
 .navTop{
-	position: relative;
-
 	background-color:white;
 	padding:20px 0;
 	box-shadow: 0 0.3px 0.5px  grey;
@@ -110,6 +154,10 @@ a:hover{
 	color: #000000;
 	text-decoration: none;
 	height: 35px;
+}
+.navTop__nav{
+	margin-left:45px;
+
 }
 .navTop__nav .active{
 	border-bottom: 2.5px solid #13c0a9;
@@ -163,7 +211,17 @@ a:hover{
 	color:white;
 }
 .h_645{
-	max-height: 645px;
+	height: 645px;
+}
+@media (max-width:991.98px){
+	.h_645{
+		height: 454px;
+	}
+}
+@media (max-width:767.98px){
+	.h_645{
+		height: auto;
+	}
 }
 .hidden{
 	overflow: hidden;
@@ -175,9 +233,12 @@ a:hover{
 }
 
 /*轮播附加信息*/
+.main__carousel_msg{
+	/*height:0;*/
+}
 .carousel__caption{
     text-shadow: 1px 1px black;
-    padding-top: 115px;
+ 	
 }
 .carousel__text{
 	width: 531px;
@@ -227,6 +288,11 @@ a:hover{
 	letter-spacing: 2px;
 
 }
+.main__column button{
+	text-align:center;
+	text-indent: 0;
+
+}
 .main__column_otherBtn.carousel__btn{
 	width:100%;
 	text-indent: 1em;
@@ -257,6 +323,8 @@ a:hover{
 }
 .carousel__msg_icon span{
 	line-height: 30px;
+	margin:4px 0;
+    
 	margin-left: 18px;
 }
 .carousel__item{
@@ -284,18 +352,20 @@ a:hover{
     letter-spacing: 3px;
     line-height: 34px;
 }
+.z_index1{
+	z-index: 1;
+}
 /*黑色半透明背景*/
 .carousel__bg_opacity{
 	background-image: url(../images/carousel_big_img_01_title_background.png);
 	background-repeat: no-repeat;
 	width: 982px;
 	height: 184px;
+	transform: scaleX(1.1);
 	background-size: contain;
 	position:absolute;
-
     top: -30px;
     left: -346px;
-    z-index: -1;
 }
 .main__son{
 	margin:0 auto;
@@ -303,6 +373,10 @@ a:hover{
 /*灰色背景*/
 .bgf7f8f9{
 	background-color:#f7f8f9;
+}
+/*字体颜色*/
+.cfff{
+	color:#fff;
 }
 /*白色背景*/
 .bgfff{
@@ -338,7 +412,7 @@ a:hover{
 }
 .main__column h5,.main__son h5{
 	font-family: HYQiHei-HZS;
-	font-size: 30px;
+	font-size: 22px;
 	font-weight: bold;
 	font-stretch: normal;
 	letter-spacing: 1px;
@@ -374,12 +448,30 @@ a:hover{
 	height:120px;
 	text-align: center;
 	line-height: 122px;
+		background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url("../images/icon_dot.png");
+	cursor: pointer;
+}
+
+.main__card li:hover .main__card_imgcontainer{
+	background-image: url("../images/icon_round-bg.png");
+}
+.main__card li{
+			background-repeat: no-repeat;
+			background-position: 90% 0;
 
 }
-.main__card_imgcontainer.active{
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-image: url("../images/icon_round-bg.png");
+.main__card li.one{
+	background-image: url(../images/1.png);
+
+}
+.main__card li.two{
+	background-image: url(../images/2.png);
+
+}
+.main__card li.three{
+	background-image: url(../images/3.png);
 }
 @media (max-width:576px){
 	.min-h-252{

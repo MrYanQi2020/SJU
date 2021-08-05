@@ -12,18 +12,19 @@
 
 <body>
 	<!-- 最外部框架-Start -->
-	<div class="container-fluid px-0 outline">
-		<div class="container">
+	<div class="container-fluid px-0 outline pt-110">
 			<!-- 顶部导航 -->
-			<nav class="navbar navbar-expand-md navTop">
-				<div class="row align-items-center  w-100">
+		<!-- <div class="container nav__container"> -->
+			<nav class="navbar navbar-expand-md navTop fixed-top">
+				<section class="container">
+									<div class="row align-items-center  w-100">
 
 					<a href="#" class="navbar-band col-auto pr-0">
 						<img src="./images/navbar_brand.png" class="nav_brand_wh">
 					</a>
 
-					<nav class="col-auto  d-flex navTop__nav  px-0 ml-72">
-						<a href="#" class="nav-item  mr-24 active d-none d-md-block">特色办学</a>
+					<nav class="col-auto d-flex navTop__nav px-0 ">
+						<a href="#" class="nav-item mr-24 active d-none d-md-block">特色办学</a>
 						<a href="#" class="nav-item  mr-24 d-none d-xl-block">招生简章</a>
 						<a href="#" class="nav-item  mr-24 d-none d-md-block">1+x证书</a>
 						<a href="#" class="nav-item  mr-24 d-none d-xl-block ">人工智能证书</a>
@@ -46,62 +47,25 @@
 						<img src="./images/icon-menu.png">
 					</button>
 				</div>
+				</section>
 			</nav>
-		</div>
+		<!-- </div> -->
 		<!-- 轮播-Start -->
-		<div class="container-fluid px-0 h_645 hidden position-relative">
+		<div class="container-fluid px-0  h_645 hidden position-relative">
 					<!-- 轮播框架 -->
-					<div id="carouselExampleSlidesOnly" class="carousel slide " data-ride="carousel-stop">
+					<div id="carouselExampleSlidesOnly" class="carousel slide " data-ride="carousel">
 						<!-- 轮播项 -->
 						<div class="carousel-inner carousel__inner">
-							<div class="carousel-item active  ">
+							<div class="carousel-item active  h_645">
 								<!-- 轮播图 -->
-								<img src="./images/carousel_img_01.jpg" class="img-fluid w-100 d-block">
-								<!-- 轮播附加信息 -->
-								<section class="h-100 carousel-caption carousel__caption ">
-									<div class="section__container h-100 position-relative">
-										<div class="carousel__text d-none d-lg-flex">
-										<p class="  carousel__text_one">西南交通大学同等学历</p>
-										<p class="  carousel__text_two">申请硕士学位</p>
-										<p class="  carousel__text_three">栽植完成硕士研究生学位，满足你对未来的渴望</p>
-										<!-- 研究课程班气泡 -->
-										<div class="carousel__msg_tooltip">
-											研究生课程班
-										</div>
-										<!-- 黑色半透明背景 -->
-										<div class="carousel__bg_opacity">
-										</div>
-									</div>
-									<div class="row carousel__msg d-flex justify-content-between mt-0 mt-lg-5  ">
-										<button class="col-lg-auto carousel__btn d-none d-md-block">
-											<span>现在报名入学</span>
-											<div class="carousel__icon-right"></div>
-										</button>
-
-										<div class="col-lg-auto  carousel__msg_other mt-5 mt-lg-0 d-none d-md-flex flex-column justify-content-between ">
-											<div class="carousel__msg_icon d-flex">
-												<img class="img-fluid  d-block" src="./images/icon_carousel_zhaosheng.png">
-												<span>招生专业: 交通运输类、物流类、计算机类、软件类</span>
-											</div>
-											<div class="carousel__msg_icon d-flex">
-												<img class="img-fluid  d-block"  src="./images/icon_carousel_address.png">
-												<span>学习地点: 成都|广汉|宜宾|线上</span>
-											</div>
-											<div class="carousel__msg_icon d-flex">
-												<img class="img-fluid  d-block" src="./images/icon_carousel_cultivate.png">
-												<span>培养类别: 已获得学士学位的在职人员</span>
-											</div>
-										</div>
-									</div>
-
-									</div>
-								</section>
+								<img src="./images/carousel_img_01.jpg" class="img-fluid h-100  w-100 d-block">
+	
 							</div>
-							<div class=" carousel-item ">
-								<img src=" ./images/carousel_img_02.jpg" class="img-fluid w-100 d-block ">
+							<div class=" carousel-item h_645">
+								<img src=" ./images/carousel_img_02.jpg" class="img-fluid  h-100 w-100 d-block ">
 							</div>
-							<div class=" carousel-item ">
-								<img src="./images/carousel_img_03.jpg" class="img-fluid w-100 d-block ">
+							<div class=" carousel-item h_645">
+								<img src="./images/carousel_img_03.jpg" class="img-fluid  h-100 w-100 d-block ">
 							</div>
 						</div>
 					</div>
@@ -112,9 +76,50 @@
 		<!-- 主要内容区域-Start -->
 		<!-- <main  class="container main__container"> -->
 			<div class="main " >
+				<!-- column-zero-轮播附加信息 -->
+				<div class="main__carousel_msg px-3 px-md-0 d-none d-md-block">
+					<section class="container  carousel__caption position-relative  mt-500-negative mb-166">
+									<div class="section__container h-100 position-relative">
+										<div class="carousel__text d-none d-lg-flex z_index1">
+											<p class="  carousel__text_one">西南交通大学同等学历</p>
+											<p class="  carousel__text_two">申请硕士学位</p>
+											<p class="  carousel__text_three">栽植完成硕士研究生学位，满足你对未来的渴望</p>
+										<!-- 研究课程班气泡 -->
+										<div class="carousel__msg_tooltip d-none  d-xl-flex z_index1">
+											研究生课程班
+										</div>
+									</div>
+									<div class="row carousel__msg d-flex justify-content-between mt-40  ">
+										<button class="col-auto carousel__btn ">
+											<span>现在报名入学</span>
+											<div class="carousel__icon-right"></div>
+										</button>
+
+										<div class="col-auto ml-auto  carousel__msg_other  flex-column justify-content-between ">
+											<div class="carousel__msg_icon d-flex align-items-center cfff">
+												<img class="img-fluid  d-block" src="./images/icon_carousel_zhaosheng.png">
+												<span class="rem1-5">招生专业: 交通运输类、物流类、计算机类、软件类</span>
+											</div>
+											<div class="carousel__msg_icon d-flex align-items-center cfff">
+												<img class="img-fluid  d-block"  src="./images/icon_carousel_address.png">
+												<span class="rem1-5">学习地点: 成都|广汉|宜宾|线上</span>
+											</div>
+											<div class="carousel__msg_icon d-flex align-items-center cfff">
+												<img class="img-fluid  d-block" src="./images/icon_carousel_cultivate.png">
+												<span class="rem1-5">培养类别: 已获得学士学位的在职人员</span>
+											</div>
+										</div>
+									</div>
+
+									</div>
+										<!-- 黑色半透明背景 -->
+										<div class="carousel__bg_opacity d-none d-lg-block">
+										</div>
+					</section>
+				</div>
 				<!-- column-one-教学特点1 -->
-				<div class="main__column  py-64 py-64 bgf7f8f9 position-relative px-3 px-md-0 ">
-					<section class="container box-shadow1 radius10 position-relative bgfff mt-160-negative ">
+				<div class="main__column  py-64 bgf7f8f9 position-relative px-3 px-md-0 ">
+					<section class="container box-shadow1 radius10 position-relative bgfff mt-160-negative">
 
 											<ul class="row px-4  py-5 h-100 justify-content-center">
 												<li class="d-md-none px-3 mb-4  ">
@@ -162,13 +167,14 @@
 											</ul>
 					</section>
 				</div>
+				<!-- two-three -->
 				<div class="py-64 bgfff px-3 px-md-0">
 					<!-- column-two-教学特点2-->
 					<div class="main__son main__card mb-3">
 						<section class="container  box-shadow1 radius10">
-							<ul class="row px-4 py-4 h-100">
+							<ul class="row px-4 py-5">
 							<li
-								class="col-lg-4 px-md-5 py-3  d-flex flex-column align-items-center">
+								class="col-lg-4 px-md-5 py-3 one d-flex flex-column align-items-center ">
 
 								<div class="d-none d-md-flex justify-content-center align-items-center  main__card_imgcontainer mb-32">
 									<img class="img-fluid  d-block" src="./images/icon_content_01.png" alt="">
@@ -180,7 +186,7 @@
 							</li>
 
 							<li
-								class="col-lg-4 px-md-5 py-3  d-flex flex-column  align-items-center">
+								class="col-lg-4 px-md-5 py-3 two d-flex flex-column  align-items-center">
 
 								<div class="d-none d-md-flex justify-content-center align-items-center main__card_imgcontainer active mb-32">
 									<img class=" img-fluid  d-block" src="./images/icon_content_02.png" alt=""> 
@@ -191,7 +197,7 @@
 								</p>
 							</li>
 							<li
-								class="col-lg-4 px-md-5 py-3  d-flex flex-column align-items-center">
+								class="col-lg-4 px-md-5 py-3 three d-flex flex-column align-items-center">
 
 								<div class="d-none d-md-flex justify-content-center align-items-center main__card_imgcontainer mb-32">
 									<img class=" img-fluid  d-block" src="./images/icon_content_03.png" alt="">
@@ -215,17 +221,17 @@
 							<div
 								class="main__operatingConditions_content one text-center position-relative col-md-6 col-lg-4">
 								<img src="./images/pho_content_conditions_01.jpg" width="375" height="263"
-									class=" d-block  img-fluid">
+									class=" w-100 d-block  img-fluid">
 							</div>
 							<div
 								class="main__operatingConditions_content two text-center position-relative col-md-6 col-lg-4 mt-2 mt-md-0">
 								<img src="./images/pho_content_conditions_02.jpg" width="375" height="263"
-									class="d-block  img-fluid">
+									class="w-100 d-block  img-fluid">
 							</div>
 							<div
 								class="main__operatingConditions_content three text-center position-relative col-md-6 col-lg-4 mt-2 mt-lg-0">
 								<img src="./images/pho_content_conditions_03.jpg" width="375" height="263"
-									class=" d-block  img-fluid">
+									class=" w-100 d-block  img-fluid">
 							</div>
 						</div>        
 						</section>
