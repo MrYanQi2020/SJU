@@ -47,42 +47,13 @@ button{
 		transform: translateY(65px);
 	}
 }
-.c13c0a9{
-	color:#13c0a9;
-}
+
 .nav_brand_wh{
 	width: 161px;
 	height: 69px;
 }
 
-.ml-22{
-	margin-left: 22px;
-}
-}
-.ml-46{
-	margin-left:46px;
-}
-.mr-24{
-	margin-right:24px;
-}
-.mb-166{
-	margin-bottom: 166px;
-}
-.mt-40{
-	margin-top:40px;
-}
-.mt-160-negative{
-	margin-top:-160px;
-}
-.mt-500-negative{
-	margin-top: -500px;
-}
-.mb-32{
-	margin-bottom:32px;
-}
-.py-64{
-	padding:64px 0;
-}
+
 .nav__content{
 	width: 669px;
 	height: 30px;
@@ -114,22 +85,9 @@ button{
 	vertical-align: middle;
 
 }
-.ml-auto{
-	margin-left:auto;
-	margin-right:-20px;
-}
-.rem1-5{
-	    font-size: 1.5rem;
-}
-.pr-0{
-	padding-right:0;
-}
-.pt-110{
-	padding-top:100px;
-}
-.pt-20{
-	padding-top: 20px;
-}
+
+
+
 .nav__button_menu{
 	border-radius:5px;
 	border:none;
@@ -210,19 +168,7 @@ button{
 	background:#13c0a9;
 	color:white;
 }
-.h_645{
-	height: 645px;
-}
-@media (max-width:991.98px){
-	.h_645{
-		height: 454px;
-	}
-}
-@media (max-width:767.98px){
-	.h_645{
-		height: auto;
-	}
-}
+
 .hidden{
 	overflow: hidden;
 }
@@ -352,9 +298,7 @@ button{
     letter-spacing: 3px;
     line-height: 34px;
 }
-.z_index1{
-	z-index: 1;
-}
+
 /*黑色半透明背景*/
 .carousel__bg_opacity{
 	background-image: url(../images/carousel_big_img_01_title_background.png);
@@ -370,29 +314,12 @@ button{
 .main__son{
 	margin:0 auto;
 }
-/*灰色背景*/
-.bgf7f8f9{
-	background-color:#f7f8f9;
-}
-/*字体颜色*/
-.cfff{
-	color:#fff;
-}
-/*白色背景*/
-.bgfff{
-	background-color:#fff;
-}
+
 .bgred{
 	background-color: red;
 }
-/*圆角10px*/
-.radius10{
-	border-radius: 10px;
-}
-/*盒阴影1*/
-.box-shadow1{
-	box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
-}
+
+
 .main__column button,{
 	width: 190px;
 	height: 40px;
@@ -583,9 +510,7 @@ button{
 	color: #028fff;
 	font-weight: 400;
 }
-.c21bf9c{
-	color:#21bf9c;
-}
+
 /*友链样式--Start*/
 .main__friendlink_list li{
 		width: 235px;

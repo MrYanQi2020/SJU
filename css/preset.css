@@ -1,0 +1,94 @@
+/*字体颜色*/
+.c13c0a9{
+	color:#13c0a9;
+}
+.cfff{
+	color:#fff;
+}
+.c21bf9c{
+	color:#21bf9c;
+}
+/*背景颜色*/
+/*灰色*/
+.bgf7f8f9{
+	background-color:#f7f8f9;
+}
+
+/*白色*/
+.bgfff{
+	background-color:#fff;
+}
+/*圆角*/
+.radius10{
+	border-radius: 10px;
+}
+/*盒阴影1*/
+.box-shadow1{
+	box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+}
+/*外边距*/
+.ml-46{
+	margin-left:46px;
+}
+.mr-24{
+	margin-right:24px;
+}
+.mb-166{
+	margin-bottom: 166px;
+}
+.mt-40{
+	margin-top:40px;
+}
+.mt-160-negative{
+	margin-top:-160px;
+}
+.mt-500-negative{
+	margin-top: -500px;
+}
+.mb-32{
+	margin-bottom:32px;
+}
+.ml-22{
+	margin-left: 22px;
+}
+.ml-auto{
+	margin-left:auto;
+	margin-right:-20px;
+}
+/*内填充、内边距*/
+.py-64{
+	padding:64px 0;
+}
+.pr-0{
+	padding-right:0;
+}
+.pt-110{
+	padding-top:100px;
+}
+.pt-20{
+	padding-top: 20px;
+}
+/*字体大小*/
+.rem1-5{
+	    font-size: 1.5rem;
+}
+/*轮播专属高度-Start*/
+.h_645{
+	height: 645px;
+}
+@media (max-width:991.98px){
+	.h_645{
+		height: 454px;
+	}
+}
+@media (max-width:767.98px){
+	.h_645{
+		height: auto;
+	}
+}
+/*轮播专属高度-End*/
+
+/*层级*/
+.z_index1{
+	z-index: 1;
+}
